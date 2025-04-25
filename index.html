@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompt Hub - IkiTech Solutions</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f7f9fc; margin: 0; padding: 20px; color: #333; }
+    h1 { color: #005baa; }
+    .category { margin-top: 30px; }
+    .prompt-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .prompt-card h3 { margin-top: 0; color: #005baa; }
+    .prompt-card textarea {
+      width: 100%;
+      height: 100px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      resize: none;
+    }
+    .copy-btn {
+      background-color: #005baa;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .copy-btn:hover { background-color: #004080; }
+  </style>
+</head>
+<body>
+  <h1>🔍 Prompt Hub Interactivo - IkiTech Solutions</h1>
+  <p>Usa estos prompts estratégicos para potenciar tu trabajo con inteligencia artificial.</p>
+  <!-- Aquí iría el contenido completo actualizado -->
+  <script>
+    function copyPrompt(id) {
+      const promptText = document.getElementById(id);
+      promptText.select();
+      promptText.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("Prompt copiado al portapapeles ✔️");
+    }
+  </script>
+</body>
+</html>
