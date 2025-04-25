@@ -39,7 +39,91 @@
 <body>
   <h1>🔍 Prompt Hub Interactivo - IkiTech Solutions</h1>
   <p>Usa estos prompts estratégicos para potenciar tu trabajo con inteligencia artificial.</p>
-  <!-- Aquí iría el contenido completo actualizado -->
+
+  <div class="category">
+    <h2>🔧 Desarrollo de Software</h2>
+    <div class="prompt-card">
+      <h3>Diseño de Arquitectura (Clean Architecture)</h3>
+      <textarea readonly id="prompt1">Actúa como arquitecto de software experto en microservicios y define una arquitectura basada en Clean Architecture para un sistema de gestión de clínicas médicas ocupacionales, considerando escalabilidad, seguridad y mantenibilidad.</textarea>
+      <button class="copy-btn" onclick="copyPrompt('prompt1')">📋 Copiar Prompt</button>
+    </div>
+    <div class="prompt-card">
+      <h3>Refactorización de Código</h3>
+      <textarea readonly id="prompt1b">Revisa este código en Java y sugiere mejoras siguiendo principios SOLID y Clean Code: [pegar código aquí].</textarea>
+      <button class="copy-btn" onclick="copyPrompt('prompt1b')">📋 Copiar Prompt</button>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>📊 Consultoría Tecnológica</h2>
+    <div class="prompt-card">
+      <h3>Propuesta Comercial</h3>
+      <textarea readonly id="prompt2">Redacta una propuesta comercial para una solución de gestión de proyectos con seguimiento de KPI y asignación de personal técnico en el sector salud, usando metodología SCRUM y precios por fases.</textarea>
+      <button class="copy-btn" onclick="copyPrompt('prompt2')">📋 Copiar Prompt</button>
+    </div>
+    <div class="prompt-card">
+      <h3>Roadmap de Transformación Digital</h3>
+      <textarea readonly id="prompt2b">Actúa como consultor senior y propón un roadmap de 6 meses para la transformación digital de una empresa del sector construcción con procesos manuales y uso intensivo de Excel.</textarea>
+      <button class="copy-btn" onclick="copyPrompt('prompt2b')">📋 Copiar Prompt</button>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>🚀 Agilidad y Equipos</h2>
+    <div class="prompt-card">
+      <h3>Historias de Usuario</h3>
+      <textarea readonly id="prompt3">Genera historias de usuario con criterios de aceptación para un módulo de login que permita autenticación con correo electrónico, Google y doble factor (2FA).</textarea>
+      <button class="copy-btn" onclick="copyPrompt('prompt3')">📋 Copiar Prompt</button>
+    </div>
+    <div class="prompt-card">
+      <h3>Tablero de Tareas SCRUM</h3>
+      <textarea readonly id="prompt3b">Crea un tablero SCRUM para un equipo de 5 personas que desarrollará una app móvil de seguimiento de hábitos saludables en 3 sprints.</textarea>
+      <button class="copy-btn" onclick="copyPrompt('prompt3b')">📋 Copiar Prompt</button>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>🧠 IA Aplicada</h2>
+    <div class="prompt-card">
+      <h3>Agente RAG para Salud Ocupacional</h3>
+      <textarea readonly id="prompt4">Propón una arquitectura Agentic RAG con uso de vector DB para interoperabilidad clínica basada en archivos PDF de historia clínica y exámenes médicos.</textarea>
+      <button class="copy-btn" onclick="copyPrompt('prompt4')">📋 Copiar Prompt</button>
+    </div>
+    <div class="prompt-card">
+      <h3>Aplicaciones de IA en Software Corporativo</h3>
+      <textarea readonly id="prompt4b">Sugiere formas de aplicar inteligencia artificial en una plataforma de gestión documental para automatizar clasificación, búsqueda y resumen de documentos legales.</textarea>
+      <button class="copy-btn" onclick="copyPrompt('prompt4b')">📋 Copiar Prompt</button>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>🧪 Calidad y QA</h2>
+    <div class="prompt-card">
+      <h3>Casos de Prueba Automatizados</h3>
+      <textarea readonly id="prompt5">Genera una suite básica de pruebas automatizadas para una API REST de autenticación usando Postman y JavaScript.</textarea>
+      <button class="copy-btn" onclick="copyPrompt('prompt5')">📋 Copiar Prompt</button>
+    </div>
+    <div class="prompt-card">
+      <h3>Checklist de Revisión de Entregables</h3>
+      <textarea readonly id="prompt5b">Crea un checklist para revisar entregables de software desde la perspectiva de QA funcional, pruebas de regresión y pruebas de carga.</textarea>
+      <button class="copy-btn" onclick="copyPrompt('prompt5b')">📋 Copiar Prompt</button>
+    </div>
+  </div>
+
+  <div class="category">
+    <h2>📞 Atención al Cliente</h2>
+    <div class="prompt-card">
+      <h3>Respuesta Técnica a Clientes</h3>
+      <textarea readonly id="prompt6">Redacta una respuesta profesional para un cliente que reporta error en la carga de archivos en la plataforma, incluyendo posibles causas y pasos a seguir.</textarea>
+      <button class="copy-btn" onclick="copyPrompt('prompt6')">📋 Copiar Prompt</button>
+    </div>
+    <div class="prompt-card">
+      <h3>Flujo de Conversación para Chatbot</h3>
+      <textarea readonly id="prompt6b">Crea un flujo de conversación para un chatbot que gestione solicitudes de soporte técnico para una plataforma SaaS, diferenciando errores de usuario y errores del sistema.</textarea>
+      <button class="copy-btn" onclick="copyPrompt('prompt6b')">📋 Copiar Prompt</button>
+    </div>
+  </div>
+
   <script>
     function copyPrompt(id) {
       const promptText = document.getElementById(id);
